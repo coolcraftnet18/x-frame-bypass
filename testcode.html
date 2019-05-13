@@ -1,0 +1,15 @@
+<script type="text/javascript">
+function loadUrl() {
+    document.getElementById("urlDisplay").src = document.getElementById("urlSource").value;
+}
+</script>
+
+<p><input type="text" id="urlSource" value="http://www.cnn.com"> <input type="button" value="Go" onclick="loadUrl()">
+
+<p>
+	<script src="https://unpkg.com/@ungap/custom-elements-builtin@0.1.2/min.js"></script>
+	<script src="https://raw.githubusercontent.com/niutech/x-frame-bypass/master/x-frame-bypass.js" type="module"></script>
+</head>
+<body>
+	<iframe is="x-frame-bypass" id="urlDisplay" width="1000" height="1000"></iframe>
+	
